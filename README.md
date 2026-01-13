@@ -1,33 +1,77 @@
 # Programming Knowledge Base
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange.svg)](https://github.com/LucasBiason/programming-knowledge-base)
+**Fundamentos de Ciência da Computação documentados a partir de estudo ativo e prática contínua.**
 
-> Base de conhecimento completa em fundamentos de programacao
+Este repositório faz parte da iniciativa **Engineering Knowledge Base**. O objetivo não é ensino formal, mas a documentação estruturada de fundamentos, padrões e decisões técnicas utilizadas no desenvolvimento de software profissional.
 
-Um repositorio consolidando estudos sobre algoritmos fundamentais, estruturas de dados e tecnicas de resolucao de problemas.
+O conteúdo reflete estudos aplicados, prática diária e referências acadêmicas consolidadas.
+
+---
+
+## Sobre este repositório
+
+Este repositório reúne anotações técnicas, implementações e análises de algoritmos fundamentais, organizadas como parte de um processo contínuo de estudo e consolidação de fundamentos de ciência da computação.
+
+**Este repositório não é:**
+- Um curso ou tutorial passo a passo
+- Material gerado automaticamente
+- Uma lista de exercícios sem contexto
+
+**Este repositório é:**
+- Uma base pessoal de consolidação de fundamentos
+- Documentação de aprendizado real e incremental
+- Referência técnica para consulta e estudo
 
 ---
 
 ## Objetivo
 
-Este repositorio representa um banco de conhecimento sobre fundamentos de programacao, consolidando:
+Consolidar conhecimento sobre algoritmos fundamentais, estruturas de dados e técnicas de resolução de problemas através de:
 
-- Algoritmos classicos de ordenacao e busca
-- Algoritmos de grafos
-- Programacao dinamica
-- Tecnicas avancadas de otimizacao
-- Analise de complexidade detalhada
-- Perguntas comuns em entrevistas tecnicas
+- Implementações manuais e comentadas
+- Análise detalhada de complexidade
+- Explicações técnicas baseadas em referências acadêmicas
+- Perguntas recorrentes de entrevistas técnicas
 
-### Metas Especificas
+---
 
-- Implementar 25 algoritmos fundamentais
-- Documentar teoria e pratica de cada algoritmo
-- Criar base de consulta para resolucao de problemas
-- Preparacao para entrevistas tecnicas
+## O que você vai encontrar aqui
+
+### Algoritmos de Ordenação (5 algoritmos)
+- Bubble Sort, Selection Sort, Insertion Sort
+- Merge Sort, Quick Sort
+- Análise de complexidade e trade-offs
+
+### Algoritmos de Busca (5 algoritmos)
+- Linear Search, Binary Search
+- Jump Search, Interpolation Search, Exponential Search
+- Aplicações práticas e otimizações
+
+### Algoritmos de Grafos (5 algoritmos)
+- BFS, DFS
+- Dijkstra, Kruskal, Prim
+- Implementações e casos de uso
+
+### Programação Dinâmica (5 algoritmos)
+- Fibonacci, LCS, Knapsack
+- Matrix Chain Multiplication, Coin Change
+- Padrões e otimizações
+
+### Algoritmos Avançados (5 algoritmos)
+- Union-Find, KMP, Rabin-Karp
+- A* Search, Backtracking
+- Técnicas avançadas de resolução
+
+**Total: 25 algoritmos fundamentais + 3 bonus**
+
+---
+
+## O que você NÃO vai encontrar
+
+- Conteúdo gerado automaticamente
+- Tutoriais genéricos
+- Promessas de "aprenda X em Y dias"
+- Explicações superficiais sem justificativa técnica
 
 ---
 
@@ -35,10 +79,10 @@ Este repositorio representa um banco de conhecimento sobre fundamentos de progra
 
 ```
 programming-knowledge-base/
-├── Sorting-Algorithms/         # Algoritmos de ordenacao
+├── Sorting-Algorithms/         # Algoritmos de ordenação
 │   ├── 01-bubble-sort.ipynb
 │   ├── 02-selection-sort.ipynb
-│   └── exercises/             # Perguntas de entrevista
+│   └── exercises/              # Perguntas de entrevista
 │
 ├── Searching-Algorithms/       # Algoritmos de busca
 │   ├── 01-linear-search.ipynb
@@ -50,64 +94,64 @@ programming-knowledge-base/
 │   ├── 02-dfs.ipynb
 │   └── exercises/
 │
-├── Dynamic-Programming/        # Programacao dinamica
+├── Dynamic-Programming/        # Programação dinâmica
 │   ├── 01-fibonacci.ipynb
 │   ├── 02-lcs.ipynb
 │   └── exercises/
 │
-└── Advanced-Algorithms/        # Algoritmos avancados
-    ├── 01-union-find.ipynb
-    ├── 02-kmp.ipynb
-    └── exercises/
+├── Advanced-Algorithms/        # Algoritmos avançados
+│   ├── 01-union-find.ipynb
+│   ├── 02-kmp.ipynb
+│   └── exercises/
+│
+├── docs/                      # Documentação adicional
+│   └── roadmap.md             # Planejamento
+│
+└── templates/                 # Templates para novos notebooks
+    └── notebook-template.ipynb
 ```
 
 ---
 
-## Conteudo
+## Público-alvo
 
-### Algoritmos de Ordenacao (5 algoritmos)
-1. Bubble Sort - O(n^2)
-2. Selection Sort - O(n^2)
-3. Insertion Sort - O(n^2)
-4. Merge Sort - O(n log n)
-5. Quick Sort - O(n log n) medio
-
-### Algoritmos de Busca (5 algoritmos)
-6. Linear Search - O(n)
-7. Binary Search - O(log n)
-8. Jump Search - O(sqrt(n))
-9. Interpolation Search - O(log log n)
-10. Exponential Search - O(log n)
-
-### Algoritmos de Grafos (5 algoritmos)
-11. Breadth-First Search (BFS)
-12. Depth-First Search (DFS)
-13. Dijkstra Algorithm
-14. Kruskal Algorithm
-15. Prim Algorithm
-
-### Programacao Dinamica (5 algoritmos)
-16. Fibonacci Sequence
-17. Longest Common Subsequence
-18. 0/1 Knapsack Problem
-19. Matrix Chain Multiplication
-20. Coin Change Problem
-
-### Algoritmos Avancados (5 algoritmos)
-21. Union-Find
-22. KMP Algorithm
-23. Rabin-Karp Algorithm
-24. A* Search
-25. Backtracking (N-Queens)
+- Desenvolvedores em formação buscando fundamentos sólidos
+- Desenvolvedores backend interessados em algoritmos
+- Engenheiros de software preparando-se para entrevistas técnicas
+- Estudantes de computação consolidando conhecimentos
 
 ---
 
-## Como Usar
+## Como este conteúdo é produzido
 
-### Instalacao
+- **Escrita manual e incremental:** Cada notebook é escrito manualmente, refletindo aprendizado real
+- **Commits pequenos e semânticos:** Evolução contínua ao longo do tempo
+- **Referências acadêmicas:** Quando aplicável, referências a livros e papers
+- **Testes e validação:** Implementações são testadas e validadas
+
+---
+
+## Relação com o Ecossistema
+
+Este repositório faz parte do **Engineering Knowledge Base**.
+
+- **Base teórica para:** Todos os outros projetos do ecossistema
+- **Conecta com:** 
+  - Data Science KB (algoritmos de processamento de dados)
+  - Microservices KB (algoritmos de grafos para arquitetura)
+  - IA/ML KB (algoritmos fundamentais para ML)
+- **Aplica em:** 
+  - CQRS Architecture Lab (estruturas de dados)
+  - Hackathon Threat Modeling (grafos para análise de arquitetura)
+
+---
+
+## Como usar
+
+### Instalação
 
 ```bash
-# Clone o repositorio
+# Clone o repositório
 git clone https://github.com/LucasBiason/programming-knowledge-base.git
 cd programming-knowledge-base
 
@@ -117,7 +161,7 @@ source .venv/bin/activate  # Linux/Mac
 # ou
 .venv\Scripts\activate  # Windows
 
-# Instale as dependencias
+# Instale as dependências
 pip install -r requirements.txt
 ```
 
@@ -135,42 +179,32 @@ jupyter lab
 
 ## Stack Utilizada
 
-### Tecnologias Principais
-- Python 3.9+
-- Jupyter Notebook
-- NumPy (para operacoes numericas)
-- Matplotlib (para visualizacoes)
-
-### Qualidade
-- pytest (testes)
-- black (formatacao)
-- isort (organizacao de imports)
+- **Python 3.9+** - Linguagem principal
+- **Jupyter Notebook** - Ambiente de desenvolvimento
+- **NumPy** - Operações numéricas
+- **Matplotlib** - Visualizações
+- **pytest** - Testes automatizados
 
 ---
 
-## Navegacao Rapida
+## Status
 
-- [Sorting Algorithms](./Sorting-Algorithms/)
-- [Searching Algorithms](./Searching-Algorithms/)
-- [Graph Algorithms](./Graph-Algorithms/)
-- [Dynamic Programming](./Dynamic-Programming/)
-- [Advanced Algorithms](./Advanced-Algorithms/)
+**Em desenvolvimento contínuo.**
+
+Este repositório não tem prazo de conclusão fechado. Conteúdo é adicionado incrementalmente conforme estudo e prática.
 
 ---
 
-## Contribuindo
+## Outros repositórios da Knowledge Base
 
-Contribuicoes sao bem-vindas! Leia [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes.
-
----
-
-## Licenca
-
-Este projeto esta licenciado sob a Licenca MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+- **[Engineering Knowledge Base](../engineering-knowledge-base/)** - Hub central do ecossistema
+- **[Data Science Knowledge Base](../data-science-knowledge-base/)** - Manipulação e análise de dados
+- **[Microservices Knowledge Base](../microservices-knowledge-base/)** - Arquitetura de sistemas distribuídos
+- **[IA/ML Knowledge Base](../ia-ml-knowledge-base/)** - Inteligência Artificial aplicada
 
 ---
 
-## Referencias
+## Referências
 
 1. Cormen, T. H., et al. "Introduction to Algorithms" (3rd ed.). MIT Press, 2009.
 2. Sedgewick, R., & Wayne, K. "Algorithms" (4th ed.). Addison-Wesley, 2011.
@@ -179,5 +213,10 @@ Este projeto esta licenciado sob a Licenca MIT - veja o arquivo [LICENSE](LICENS
 
 ---
 
-Desenvolvido por Lucas Biason para consolidar conhecimentos em algoritmos fundamentais e criar uma base de consulta completa.
+## Licença
 
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+*Desenvolvido por Lucas Biason para consolidar conhecimentos em algoritmos fundamentais e criar uma base de consulta completa.*

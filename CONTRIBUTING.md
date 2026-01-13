@@ -98,3 +98,5 @@ Abra uma issue para discutir mudancas maiores antes de implementar.
 
 Licenca MIT - Veja LICENSE para detalhes
 
+
+
