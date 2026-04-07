@@ -1,77 +1,56 @@
 # Programming Knowledge Base
 
-**Fundamentos de Ciência da Computação documentados a partir de estudo ativo e prática contínua.**
+**Fundamentos de Ciencia da Computacao, padroes de engenharia e tecnologias de backend documentados a partir de estudo ativo e pratica profissional.**
 
-Este repositório faz parte da iniciativa **Engineering Knowledge Base**. O objetivo não é ensino formal, mas a documentação estruturada de fundamentos, padrões e decisões técnicas utilizadas no desenvolvimento de software profissional.
-
-O conteúdo reflete estudos aplicados, prática diária e referências acadêmicas consolidadas.
+Este repositorio faz parte da iniciativa **Engineering Knowledge Base**. O objetivo e a documentacao estruturada de fundamentos, padroes e decisoes tecnicas utilizadas no desenvolvimento de software profissional.
 
 ---
 
-## Sobre este repositório
+## Conteudo
 
-Este repositório reúne anotações técnicas, implementações e análises de algoritmos fundamentais, organizadas como parte de um processo contínuo de estudo e consolidação de fundamentos de ciência da computação.
+### Algoritmos Fundamentais
 
-**Este repositório não é:**
-- Um curso ou tutorial passo a passo
-- Material gerado automaticamente
-- Uma lista de exercícios sem contexto
+| Modulo | Notebooks | Descricao |
+|--------|-----------|-----------|
+| [sorting-algorithms](sorting-algorithms/) | 5 | Bubble, Selection, Insertion, Merge, Quick Sort |
+| [searching-algorithms](searching-algorithms/) | 5 | Linear, Binary, Jump, Interpolation, Exponential Search |
+| [graph-algorithms](graph-algorithms/) | 5 | BFS, DFS, Dijkstra, Kruskal, Prim |
+| [dynamic-programming](dynamic-programming/) | 5 | Fibonacci, LCS, Knapsack, Matrix Chain, Coin Change |
+| [advanced-algorithms](advanced-algorithms/) | 5 | Union-Find, KMP, Rabin-Karp, A*, Backtracking |
 
-**Este repositório é:**
-- Uma base pessoal de consolidação de fundamentos
-- Documentação de aprendizado real e incremental
-- Referência técnica para consulta e estudo
+### Engenharia de Software
 
----
+| Modulo | Notebooks | Descricao |
+|--------|-----------|-----------|
+| [solid-design-patterns](solid-design-patterns/) | 4 | SOLID na pratica, Design Patterns Python, Arquitetura FastAPI, Testes profissionais |
+| [concurrency](concurrency/) | 1 + projeto | Race conditions (threads e asyncio), Postgres Row Lock |
 
-## Objetivo
+### Banco de Dados
 
-Consolidar conhecimento sobre algoritmos fundamentais, estruturas de dados e técnicas de resolução de problemas através de:
+| Modulo | Notebooks | Descricao |
+|--------|-----------|-----------|
+| [postgresql-avancado](postgresql-avancado/) | 5 | EXPLAIN ANALYZE, Indices, Queries avancadas, Modelagem, Performance |
 
-- Implementações manuais e comentadas
-- Análise detalhada de complexidade
-- Explicações técnicas baseadas em referências acadêmicas
-- Perguntas recorrentes de entrevistas técnicas
+### Infraestrutura e Messaging
 
----
+| Modulo | Notebooks | Descricao |
+|--------|-----------|-----------|
+| [redis-celery](redis-celery/) | 4 | Cache, Pub/Sub, Lock distribuido, Tasks async, Producao |
 
-## O que você vai encontrar aqui
+### Scraping e Automacao
 
-### Algoritmos de Ordenação (5 algoritmos)
-- Bubble Sort, Selection Sort, Insertion Sort
-- Merge Sort, Quick Sort
-- Análise de complexidade e trade-offs
-
-### Algoritmos de Busca (5 algoritmos)
-- Linear Search, Binary Search
-- Jump Search, Interpolation Search, Exponential Search
-- Aplicações práticas e otimizações
-
-### Algoritmos de Grafos (5 algoritmos)
-- BFS, DFS
-- Dijkstra, Kruskal, Prim
-- Implementações e casos de uso
-
-### Programação Dinâmica (5 algoritmos)
-- Fibonacci, LCS, Knapsack
-- Matrix Chain Multiplication, Coin Change
-- Padrões e otimizações
-
-### Algoritmos Avançados (5 algoritmos)
-- Union-Find, KMP, Rabin-Karp
-- A* Search, Backtracking
-- Técnicas avançadas de resolução
-
-**Total: 25 algoritmos fundamentais + 3 bonus**
+| Modulo | Notebooks | Descricao |
+|--------|-----------|-----------|
+| [web-scraping-agentes](web-scraping-agentes/) | 4 | Playwright, Pipelines ETL, Analise LLM, Agentes autonomos |
 
 ---
 
-## O que você NÃO vai encontrar
+## Totais
 
-- Conteúdo gerado automaticamente
-- Tutoriais genéricos
-- Promessas de "aprenda X em Y dias"
-- Explicações superficiais sem justificativa técnica
+- **43 notebooks** executaveis
+- **1 mini-projeto** (Postgres Row Lock)
+- **10 modulos** tematicos
+- Todos os notebooks com: diagramas Mermaid, codigo funcional, exercicios, benchmarks
 
 ---
 
@@ -79,143 +58,142 @@ Consolidar conhecimento sobre algoritmos fundamentais, estruturas de dados e té
 
 ```
 programming-knowledge-base/
-├── Sorting-Algorithms/         # Algoritmos de ordenação
+├── sorting-algorithms/          # Algoritmos de ordenacao
 │   ├── 01-bubble-sort.ipynb
 │   ├── 02-selection-sort.ipynb
-│   └── exercises/              # Perguntas de entrevista
+│   ├── 03-insertion-sort.ipynb
+│   ├── 04-merge-sort.ipynb
+│   └── 05-quick-sort.ipynb
 │
-├── Searching-Algorithms/       # Algoritmos de busca
+├── searching-algorithms/        # Algoritmos de busca
 │   ├── 01-linear-search.ipynb
 │   ├── 02-binary-search.ipynb
-│   └── exercises/
+│   ├── 03-jump-search.ipynb
+│   ├── 04-interpolation-search.ipynb
+│   └── 05-exponential-search.ipynb
 │
-├── Graph-Algorithms/           # Algoritmos de grafos
-│   ├── 01-bfs.ipynb
-│   ├── 02-dfs.ipynb
-│   └── exercises/
+├── graph-algorithms/            # Algoritmos de grafos
+│   ├── 01-bfs-busca-em-largura.ipynb
+│   ├── 02-dfs-busca-em-profundidade.ipynb
+│   ├── 03-dijkstra-caminho-minimo.ipynb
+│   ├── 04-kruskal-arvore-geradora-minima.ipynb
+│   └── 05-prim-arvore-geradora-minima.ipynb
 │
-├── Dynamic-Programming/        # Programação dinâmica
-│   ├── 01-fibonacci.ipynb
-│   ├── 02-lcs.ipynb
-│   └── exercises/
+├── dynamic-programming/         # Programacao dinamica
+│   ├── 01-fibonacci-introducao-dp.ipynb
+│   ├── 02-lcs-longest-common-subsequence.ipynb
+│   ├── 03-knapsack-01.ipynb
+│   ├── 04-matrix-chain-multiplication.ipynb
+│   └── 05-coin-change.ipynb
 │
-├── Advanced-Algorithms/        # Algoritmos avançados
+├── advanced-algorithms/         # Algoritmos avancados
 │   ├── 01-union-find.ipynb
-│   ├── 02-kmp.ipynb
-│   └── exercises/
+│   ├── 02-kmp-pattern-matching.ipynb
+│   ├── 03-rabin-karp.ipynb
+│   ├── 04-a-star-busca-heuristica.ipynb
+│   └── 05-backtracking.ipynb
 │
-├── docs/                      # Documentação adicional
-│   └── roadmap.md             # Planejamento
+├── solid-design-patterns/       # SOLID + Design Patterns + FastAPI
+│   ├── 01-solid-na-pratica.ipynb
+│   ├── 02-design-patterns-python.ipynb
+│   ├── 03-arquitetura-fastapi-profissional.ipynb
+│   └── 04-testes-profissionais.ipynb
 │
-└── templates/                 # Templates para novos notebooks
-    └── notebook-template.ipynb
+├── postgresql-avancado/         # PostgreSQL avancado
+│   ├── 01-explain-analyze-diagnostico.ipynb
+│   ├── 02-indices-estrategias.ipynb
+│   ├── 03-queries-avancadas.ipynb
+│   ├── 04-modelagem-dados.ipynb
+│   └── 05-performance-producao.ipynb
+│
+├── redis-celery/                # Redis + Celery
+│   ├── 01-redis-fundamentos.ipynb
+│   ├── 02-redis-patterns-avancados.ipynb
+│   ├── 03-celery-fundamentos.ipynb
+│   └── 04-celery-producao.ipynb
+│
+├── web-scraping-agentes/        # Web Scraping + Agentes IA
+│   ├── 01-playwright-scraping-profissional.ipynb
+│   ├── 02-pipelines-dados-scraping.ipynb
+│   ├── 03-analise-llm-dados-coletados.ipynb
+│   └── 04-agentes-autonomos-python.ipynb
+│
+├── concurrency/                 # Concorrencia e Race Conditions
+│   ├── 01-race-conditions-python.ipynb
+│   └── 02-postgres-row-lock/
+│
+├── docs/
+└── templates/
 ```
 
 ---
 
-## Público-alvo
+## Cenarios Profissionais por Modulo
 
-- Desenvolvedores em formação buscando fundamentos sólidos
-- Desenvolvedores backend interessados em algoritmos
-- Engenheiros de software preparando-se para entrevistas técnicas
-- Estudantes de computação consolidando conhecimentos
+Cada modulo usa um cenario empresarial realista (nao exemplos de livro):
 
----
-
-## Como este conteúdo é produzido
-
-- **Escrita manual e incremental:** Cada notebook é escrito manualmente, refletindo aprendizado real
-- **Commits pequenos e semânticos:** Evolução contínua ao longo do tempo
-- **Referências acadêmicas:** Quando aplicável, referências a livros e papers
-- **Testes e validação:** Implementações são testadas e validadas
+| Modulo | Cenario |
+|--------|---------|
+| PostgreSQL Avancado | Fintech - Motor de Credito (propostas, parcelas, bureaus) |
+| SOLID + Patterns | Gateway de Pagamentos (Stripe, PagarMe, MercadoPago) |
+| Redis + Celery | Motor de Consultas Externas (Serasa, SCR, Pluggy) |
+| Web Scraping | Monitoramento de Mercado (vagas, precos, oportunidades) |
+| Algoritmos | Cenarios variados (redes, grafos, otimizacao de recursos) |
 
 ---
 
-## Relação com o Ecossistema
+## Stack
 
-Este repositório faz parte do **Engineering Knowledge Base**.
-
-- **Base teórica para:** Todos os outros projetos do ecossistema
-- **Conecta com:** 
-  - Data Science KB (algoritmos de processamento de dados)
-  - Microservices KB (algoritmos de grafos para arquitetura)
-  - IA/ML KB (algoritmos fundamentais para ML)
-- **Aplica em:** 
-  - CQRS Architecture Lab (estruturas de dados)
-  - Hackathon Threat Modeling (grafos para análise de arquitetura)
+- **Python 3.12+**
+- **Jupyter Notebook / JupyterLab**
+- Dependencias por modulo em `requirements.txt` local
+- Maioria dos notebooks roda com stdlib puro (sem dependencias externas)
 
 ---
 
 ## Como usar
 
-### Instalação
-
 ```bash
-# Clone o repositório
 git clone https://github.com/LucasBiason/programming-knowledge-base.git
 cd programming-knowledge-base
 
-# Crie um ambiente virtual
+# Ambiente virtual
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-# ou
-.venv\Scripts\activate  # Windows
+source .venv/bin/activate
 
-# Instale as dependências
-pip install -r requirements.txt
-```
+# Dependencias do modulo desejado
+pip install -r <modulo>/requirements.txt
 
-### Executar Notebooks
-
-```bash
-# Inicie o Jupyter
-jupyter notebook
-
-# Ou use JupyterLab
+# Jupyter
 jupyter lab
 ```
 
 ---
 
-## Stack Utilizada
+## Modulos relacionados (microservices-knowledge-base)
 
-- **Python 3.9+** - Linguagem principal
-- **Jupyter Notebook** - Ambiente de desenvolvimento
-- **NumPy** - Operações numéricas
-- **Matplotlib** - Visualizações
-- **pytest** - Testes automatizados
-
----
-
-## Status
-
-**Em desenvolvimento contínuo.**
-
-Este repositório não tem prazo de conclusão fechado. Conteúdo é adicionado incrementalmente conforme estudo e prática.
+| Modulo | Notebooks | Descricao |
+|--------|-----------|-----------|
+| [kafka](../microservices-knowledge-base/patterns/messaging/kafka/) | 4 | Fundamentos, Patterns (Event Sourcing, CQRS, Saga), FastAPI, Producao |
+| [lgpd](../microservices-knowledge-base/patterns/security/lgpd/) | 3 | Fundamentos dev, Implementacao FastAPI, Banco e infra |
 
 ---
 
-## Outros repositórios da Knowledge Base
-
-- **[Engineering Knowledge Base](../engineering-knowledge-base/)** - Hub central do ecossistema
-- **[Data Science Knowledge Base](../data-science-knowledge-base/)** - Manipulação e análise de dados
-- **[Microservices Knowledge Base](../microservices-knowledge-base/)** - Arquitetura de sistemas distribuídos
-- **[IA/ML Knowledge Base](../ia-ml-knowledge-base/)** - Inteligência Artificial aplicada
-
----
-
-## Referências
+## Referencias
 
 1. Cormen, T. H., et al. "Introduction to Algorithms" (3rd ed.). MIT Press, 2009.
 2. Sedgewick, R., & Wayne, K. "Algorithms" (4th ed.). Addison-Wesley, 2011.
 3. Knuth, D. E. "The Art of Computer Programming". Addison-Wesley.
 4. Skiena, S. S. "The Algorithm Design Manual" (2nd ed.). Springer, 2008.
+5. Gamma, E., et al. "Design Patterns". Addison-Wesley, 1994.
+6. Martin, R. C. "Clean Architecture". Prentice Hall, 2017.
+7. Fowler, M. "Refactoring" (2nd ed.). Addison-Wesley, 2018.
 
 ---
 
-## Licença
+## Licenca
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este projeto esta licenciado sob a [MIT License](LICENSE).
 
 ---
 
