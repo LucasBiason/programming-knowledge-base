@@ -6,139 +6,130 @@ Este repositorio faz parte da iniciativa **Engineering Knowledge Base**. O objet
 
 ---
 
-## Conteudo
+## Navegacao
 
-### Algoritmos Fundamentais
+### Algoritmos
 
-| Modulo | Notebooks | Descricao |
-|--------|-----------|-----------|
-| [sorting-algorithms](sorting-algorithms/) | 5 | Bubble, Selection, Insertion, Merge, Quick Sort |
-| [searching-algorithms](searching-algorithms/) | 5 | Linear, Binary, Jump, Interpolation, Exponential Search |
-| [graph-algorithms](graph-algorithms/) | 5 | BFS, DFS, Dijkstra, Kruskal, Prim |
-| [dynamic-programming](dynamic-programming/) | 5 | Fibonacci, LCS, Knapsack, Matrix Chain, Coin Change |
-| [advanced-algorithms](advanced-algorithms/) | 5 | Union-Find, KMP, Rabin-Karp, A*, Backtracking |
+| # | Modulo | Notebooks | Descricao |
+|---|--------|-----------|-----------|
+| 01 | [Sorting Algorithms](01-sorting-algorithms/) | 5 | Bubble, Selection, Insertion, Merge, Quick Sort |
+| 02 | [Searching Algorithms](02-searching-algorithms/) | 5 | Linear, Binary, Jump, Interpolation, Exponential Search |
+| 03 | [Graph Algorithms](03-graph-algorithms/) | 5 | BFS, DFS, Dijkstra, Kruskal, Prim |
+| 04 | [Dynamic Programming](04-dynamic-programming/) | 5 | Fibonacci, LCS, Knapsack, Matrix Chain, Coin Change |
+| 05 | [Advanced Algorithms](05-advanced-algorithms/) | 5 | Union-Find, KMP, Rabin-Karp, A*, Backtracking |
 
-### Engenharia de Software
+### Engenharia e Backend
 
-| Modulo | Notebooks | Descricao |
-|--------|-----------|-----------|
-| [solid-design-patterns](solid-design-patterns/) | 4 | SOLID na pratica, Design Patterns Python, Arquitetura FastAPI, Testes profissionais |
-| [concurrency](concurrency/) | 1 + projeto | Race conditions (threads e asyncio), Postgres Row Lock |
+| # | Modulo | Notebooks | Descricao |
+|---|--------|-----------|-----------|
+| 06 | [Concurrency](06-concurrency/) | 1 + projeto | Race conditions (threads e asyncio), Postgres Row Lock |
+| 07 | [PostgreSQL Avancado](07-postgresql-avancado/) | 5 | EXPLAIN ANALYZE, Indices, Queries avancadas, Modelagem, Performance |
+| 08 | [Redis + Celery](08-redis-celery/) | 4 | Cache, Pub/Sub, Lock distribuido, Tasks async, Producao |
 
-### Banco de Dados
+---
 
-| Modulo | Notebooks | Descricao |
-|--------|-----------|-----------|
-| [postgresql-avancado](postgresql-avancado/) | 5 | EXPLAIN ANALYZE, Indices, Queries avancadas, Modelagem, Performance |
+## Detalhes por Modulo
 
-### Infraestrutura e Messaging
+### 01 - Sorting Algorithms
 
-| Modulo | Notebooks | Descricao |
-|--------|-----------|-----------|
-| [redis-celery](redis-celery/) | 4 | Cache, Pub/Sub, Lock distribuido, Tasks async, Producao |
+| Notebook | Algoritmo | Complexidade |
+|----------|-----------|-------------|
+| [01-bubble-sort](01-sorting-algorithms/01-bubble-sort.ipynb) | Bubble Sort | O(n^2) |
+| [02-selection-sort](01-sorting-algorithms/02-selection-sort.ipynb) | Selection Sort | O(n^2) |
+| [03-insertion-sort](01-sorting-algorithms/03-insertion-sort.ipynb) | Insertion Sort | O(n^2) |
+| [04-merge-sort](01-sorting-algorithms/04-merge-sort.ipynb) | Merge Sort | O(n log n) |
+| [05-quick-sort](01-sorting-algorithms/05-quick-sort.ipynb) | Quick Sort | O(n log n)* |
 
-### Scraping e Automacao
+### 02 - Searching Algorithms
 
-| Modulo | Notebooks | Descricao |
-|--------|-----------|-----------|
-| [web-scraping-agentes](web-scraping-agentes/) | 4 | Playwright, Pipelines ETL, Analise LLM, Agentes autonomos |
+| Notebook | Algoritmo | Complexidade |
+|----------|-----------|-------------|
+| [01-linear-search](02-searching-algorithms/01-linear-search.ipynb) | Linear Search | O(n) |
+| [02-binary-search](02-searching-algorithms/02-binary-search.ipynb) | Binary Search | O(log n) |
+| [03-jump-search](02-searching-algorithms/03-jump-search.ipynb) | Jump Search | O(sqrt n) |
+| [04-interpolation-search](02-searching-algorithms/04-interpolation-search.ipynb) | Interpolation Search | O(log log n) |
+| [05-exponential-search](02-searching-algorithms/05-exponential-search.ipynb) | Exponential Search | O(log n) |
+
+### 03 - Graph Algorithms
+
+| Notebook | Algoritmo | Complexidade |
+|----------|-----------|-------------|
+| [01-bfs](03-graph-algorithms/01-bfs-busca-em-largura.ipynb) | BFS (Busca em Largura) | O(V + E) |
+| [02-dfs](03-graph-algorithms/02-dfs-busca-em-profundidade.ipynb) | DFS (Busca em Profundidade) | O(V + E) |
+| [03-dijkstra](03-graph-algorithms/03-dijkstra-caminho-minimo.ipynb) | Dijkstra (Caminho Minimo) | O((V + E) log V) |
+| [04-kruskal](03-graph-algorithms/04-kruskal-arvore-geradora-minima.ipynb) | Kruskal (Arvore Geradora) | O(E log E) |
+| [05-prim](03-graph-algorithms/05-prim-arvore-geradora-minima.ipynb) | Prim (Arvore Geradora) | O((V + E) log V) |
+
+### 04 - Dynamic Programming
+
+| Notebook | Problema | Tecnica |
+|----------|----------|---------|
+| [01-fibonacci](04-dynamic-programming/01-fibonacci-introducao-dp.ipynb) | Fibonacci | Memoization e Tabulacao |
+| [02-lcs](04-dynamic-programming/02-lcs-longest-common-subsequence.ipynb) | Longest Common Subsequence | Tabulacao 2D |
+| [03-knapsack](04-dynamic-programming/03-knapsack-01.ipynb) | Knapsack 0/1 | Otimizacao combinatoria |
+| [04-matrix-chain](04-dynamic-programming/04-matrix-chain-multiplication.ipynb) | Matrix Chain Multiplication | Subproblemas intervalares |
+| [05-coin-change](04-dynamic-programming/05-coin-change.ipynb) | Coin Change | Tabulacao 1D |
+
+### 05 - Advanced Algorithms
+
+| Notebook | Algoritmo | Aplicacao |
+|----------|-----------|-----------|
+| [01-union-find](05-advanced-algorithms/01-union-find.ipynb) | Union-Find (Disjoint Sets) | Componentes conexos, Kruskal |
+| [02-kmp](05-advanced-algorithms/02-kmp-pattern-matching.ipynb) | KMP (Pattern Matching) | Busca de padroes em texto |
+| [03-rabin-karp](05-advanced-algorithms/03-rabin-karp.ipynb) | Rabin-Karp (Hashing) | Busca de padroes com hash |
+| [04-a-star](05-advanced-algorithms/04-a-star-busca-heuristica.ipynb) | A* (Busca Heuristica) | Pathfinding, GPS, jogos |
+| [05-backtracking](05-advanced-algorithms/05-backtracking.ipynb) | Backtracking | N-Queens, Sudoku, combinatoria |
+
+### 06 - Concurrency
+
+| Notebook | Topico | Stack |
+|----------|--------|-------|
+| [01-race-conditions](06-concurrency/01-race-conditions-python.ipynb) | Race Conditions | threads, asyncio, locks |
+| [02-postgres-row-lock](06-concurrency/02-postgres-row-lock/) | Postgres Row Lock | SELECT FOR UPDATE, advisory locks |
+
+### 07 - PostgreSQL Avancado
+
+Cenario unificado: **Sistema de Propostas de Credito** (fintech).
+
+| Notebook | Topico |
+|----------|--------|
+| [01-explain-analyze](07-postgresql-avancado/01-explain-analyze-diagnostico.ipynb) | EXPLAIN ANALYZE, diagnostico de queries lentas |
+| [02-indices](07-postgresql-avancado/02-indices-estrategias.ipynb) | B-Tree, parcial, funcional, GIN, compostos |
+| [03-queries-avancadas](07-postgresql-avancado/03-queries-avancadas.ipynb) | CTEs, Window Functions, LATERAL JOIN |
+| [04-modelagem](07-postgresql-avancado/04-modelagem-dados.ipynb) | Normalizacao, JSONB, particao, audit trail |
+| [05-performance](07-postgresql-avancado/05-performance-producao.ipynb) | Connection pooling, VACUUM, bulk ops, locking |
+
+### 08 - Redis + Celery
+
+Cenario unificado: **Motor de Consultas Externas** (Serasa, SCR, Pluggy).
+
+| Notebook | Topico |
+|----------|--------|
+| [01-redis-fundamentos](08-redis-celery/01-redis-fundamentos.ipynb) | Cache, Hash, Sorted Set, Pub/Sub, TTL |
+| [02-redis-patterns](08-redis-celery/02-redis-patterns-avancados.ipynb) | Lock distribuido, rate limiting, circuit breaker |
+| [03-celery-fundamentos](08-redis-celery/03-celery-fundamentos.ipynb) | Tasks, chain, group, chord, Flower |
+| [04-celery-producao](08-redis-celery/04-celery-producao.ipynb) | Retry, dead letter, prioridades, periodic tasks |
+
+---
+
+## Cenarios Profissionais
+
+Cada modulo de backend usa um cenario empresarial realista:
+
+| Modulo | Cenario |
+|--------|---------|
+| PostgreSQL Avancado | Fintech - Motor de Credito (propostas, parcelas, bureaus) |
+| Redis + Celery | Motor de Consultas Externas (Serasa, SCR, Pluggy) |
+| Algoritmos | Cenarios variados (redes, grafos, otimizacao de recursos) |
 
 ---
 
 ## Totais
 
-- **43 notebooks** executaveis
+- **35 notebooks** executaveis
 - **1 mini-projeto** (Postgres Row Lock)
-- **10 modulos** tematicos
+- **8 modulos** tematicos
 - Todos os notebooks com: diagramas Mermaid, codigo funcional, exercicios, benchmarks
-
----
-
-## Estrutura
-
-```
-programming-knowledge-base/
-├── sorting-algorithms/          # Algoritmos de ordenacao
-│   ├── 01-bubble-sort.ipynb
-│   ├── 02-selection-sort.ipynb
-│   ├── 03-insertion-sort.ipynb
-│   ├── 04-merge-sort.ipynb
-│   └── 05-quick-sort.ipynb
-│
-├── searching-algorithms/        # Algoritmos de busca
-│   ├── 01-linear-search.ipynb
-│   ├── 02-binary-search.ipynb
-│   ├── 03-jump-search.ipynb
-│   ├── 04-interpolation-search.ipynb
-│   └── 05-exponential-search.ipynb
-│
-├── graph-algorithms/            # Algoritmos de grafos
-│   ├── 01-bfs-busca-em-largura.ipynb
-│   ├── 02-dfs-busca-em-profundidade.ipynb
-│   ├── 03-dijkstra-caminho-minimo.ipynb
-│   ├── 04-kruskal-arvore-geradora-minima.ipynb
-│   └── 05-prim-arvore-geradora-minima.ipynb
-│
-├── dynamic-programming/         # Programacao dinamica
-│   ├── 01-fibonacci-introducao-dp.ipynb
-│   ├── 02-lcs-longest-common-subsequence.ipynb
-│   ├── 03-knapsack-01.ipynb
-│   ├── 04-matrix-chain-multiplication.ipynb
-│   └── 05-coin-change.ipynb
-│
-├── advanced-algorithms/         # Algoritmos avancados
-│   ├── 01-union-find.ipynb
-│   ├── 02-kmp-pattern-matching.ipynb
-│   ├── 03-rabin-karp.ipynb
-│   ├── 04-a-star-busca-heuristica.ipynb
-│   └── 05-backtracking.ipynb
-│
-├── solid-design-patterns/       # SOLID + Design Patterns + FastAPI
-│   ├── 01-solid-na-pratica.ipynb
-│   ├── 02-design-patterns-python.ipynb
-│   ├── 03-arquitetura-fastapi-profissional.ipynb
-│   └── 04-testes-profissionais.ipynb
-│
-├── postgresql-avancado/         # PostgreSQL avancado
-│   ├── 01-explain-analyze-diagnostico.ipynb
-│   ├── 02-indices-estrategias.ipynb
-│   ├── 03-queries-avancadas.ipynb
-│   ├── 04-modelagem-dados.ipynb
-│   └── 05-performance-producao.ipynb
-│
-├── redis-celery/                # Redis + Celery
-│   ├── 01-redis-fundamentos.ipynb
-│   ├── 02-redis-patterns-avancados.ipynb
-│   ├── 03-celery-fundamentos.ipynb
-│   └── 04-celery-producao.ipynb
-│
-├── web-scraping-agentes/        # Web Scraping + Agentes IA
-│   ├── 01-playwright-scraping-profissional.ipynb
-│   ├── 02-pipelines-dados-scraping.ipynb
-│   ├── 03-analise-llm-dados-coletados.ipynb
-│   └── 04-agentes-autonomos-python.ipynb
-│
-├── concurrency/                 # Concorrencia e Race Conditions
-│   ├── 01-race-conditions-python.ipynb
-│   └── 02-postgres-row-lock/
-│
-├── docs/
-└── templates/
-```
-
----
-
-## Cenarios Profissionais por Modulo
-
-Cada modulo usa um cenario empresarial realista (nao exemplos de livro):
-
-| Modulo | Cenario |
-|--------|---------|
-| PostgreSQL Avancado | Fintech - Motor de Credito (propostas, parcelas, bureaus) |
-| SOLID + Patterns | Gateway de Pagamentos (Stripe, PagarMe, MercadoPago) |
-| Redis + Celery | Motor de Consultas Externas (Serasa, SCR, Pluggy) |
-| Web Scraping | Monitoramento de Mercado (vagas, precos, oportunidades) |
-| Algoritmos | Cenarios variados (redes, grafos, otimizacao de recursos) |
 
 ---
 
@@ -170,12 +161,13 @@ jupyter lab
 
 ---
 
-## Modulos relacionados (microservices-knowledge-base)
+## Modulos relacionados
 
-| Modulo | Notebooks | Descricao |
-|--------|-----------|-----------|
-| [kafka](../microservices-knowledge-base/patterns/messaging/kafka/) | 4 | Fundamentos, Patterns (Event Sourcing, CQRS, Saga), FastAPI, Producao |
-| [lgpd](../microservices-knowledge-base/patterns/security/lgpd/) | 3 | Fundamentos dev, Implementacao FastAPI, Banco e infra |
+| Repositorio | Modulo | Descricao |
+|-------------|--------|-----------|
+| [microservices-knowledge-base](../microservices-knowledge-base/) | SOLID + Design Patterns | SOLID na pratica, patterns Python, arquitetura FastAPI |
+| [microservices-knowledge-base](../microservices-knowledge-base/) | LGPD para Desenvolvedores | Fundamentos, implementacao FastAPI, banco e infra |
+| [ia-ml-knowledge-base](../ia-ml-knowledge-base/) | Web Scraping + Agentes | Playwright, pipelines ETL, analise LLM, agentes autonomos |
 
 ---
 
